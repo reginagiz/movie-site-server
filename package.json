@@ -5,8 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,7 @@
     "express-fileupload": "^1.4.0",
     "mongodb": "^4.7.0",
     "mongoose": "^6.4.4",
+    "serve": "^14.0.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

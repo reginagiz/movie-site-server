@@ -11,5 +11,5 @@ router.get('/movies/:id', MovieController.getOne);
 router.put('/movies', MovieController.update);
 router.delete('/movies/:id', MovieController.delete);
 
-export default router;
+export default router;  
  

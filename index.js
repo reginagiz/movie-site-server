@@ -6,9 +6,9 @@ import fileUpload from 'express-fileupload';
 const URL =
   'mongodb+srv://regina:H0QYOTC6WLzUrfBg@cluster0.fhuwl.mongodb.net/movie_app?retryWrites=true&w=majority';
 
-const PORT = 5000;
+const PORT = process.env.Port || 5000;
 
-const app = express();  
+const app = express();
 app.use(cors());
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
